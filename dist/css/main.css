@@ -1,1 +1,27 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+header nav.top {
+  height: 10vh;
+  background-color: aqua;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav.top h2 {
+  color: white;
+}
+
+header nav.top .top--menu.active > * {
+  margin-right: 0.8rem;
+}
+
+header nav.top .top--menu.active a {
+  text-decoration: none;
+  color: #fff;
+}
+/*# sourceMappingURL=main.css.map */
