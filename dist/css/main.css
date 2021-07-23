@@ -1,6 +1,29 @@
-header nav.top {
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+
+.header {
+  background: url("/images/desktop/image-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+}
+
+.header nav.top {
   height: 10vh;
-  background-color: aqua;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,16 +35,105 @@ header nav.top {
           align-items: center;
 }
 
-header nav.top h2 {
-  color: white;
+.header nav.top .header--logo {
+  margin-left: 20px;
 }
 
-header nav.top .top--menu.active > * {
-  margin-right: 0.8rem;
-}
-
-header nav.top .top--menu.active a {
+.header nav.top .top--menu.active a {
   text-decoration: none;
   color: #fff;
+}
+
+.header nav.top .top--menu.active {
+  background-color: khaki;
+}
+
+.header nav.top .top--menu.active .btn_nav {
+  border-radius: 100px;
+  border: 0;
+  padding: 0.2rem 0.4rem;
+}
+
+.header nav.top .nav__list {
+  list-style: none;
+}
+
+.header h1 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 100px;
+  font-family: "Fraunces", sans-serif;
+  font-size: 2.5rem;
+}
+
+.header .header--arrow {
+  margin: 100px auto 0px auto;
+  width: 20px;
+}
+
+main section.photo-text .photo-container {
+  width: 100%;
+}
+
+main section.photo-text .photo-container .section--photo {
+  max-width: 100%;
+  max-height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+main section.photo-text .text-container {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.photo-text .text-container .title {
+  font-family: "Fraunces", sans-serif;
+  color: #23303e;
+}
+
+main section.photo-text .text-container .description {
+  font-family: "Fraunces", sans-serif;
+  text-align: center;
+  color: #a7abae;
+}
+
+main section.photo-text .text-container .learn-more {
+  text-decoration: none;
+  color: #23303e;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+main section.photo-text .text-container .learn-more::after {
+  position: absolute;
+  top: 20px;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 12px;
+  background-color: rgba(250, 212, 0, 0.856);
+  z-index: -1;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+main section.photo-text .text-container .learn-more:hover::after {
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */
