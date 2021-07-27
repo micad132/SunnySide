@@ -102,6 +102,7 @@ main section.photo-text .text-container {
 }
 
 main section.photo-text .text-container .title {
+  text-align: center;
   font-family: "Fraunces", sans-serif;
   color: #23303e;
 }
@@ -137,6 +138,10 @@ main section.photo-text .text-container .learn-more:hover::after {
   opacity: 1;
 }
 
+main section.photo-text .disclaimer {
+  position: relative;
+}
+
 main section.photo-text .disclaimer.cherry {
   background: url("/images/mobile/image-graphic-design.jpg");
   background-size: cover;
@@ -145,17 +150,25 @@ main section.photo-text .disclaimer.cherry {
   height: 90vh;
 }
 
-main section.photo-text .disclaimer.cherry .text {
-  border: 2px solid red;
+main section.photo-text .disclaimer .text-wrapper {
+  position: absolute;
+  bottom: 10%;
+}
+
+main section.photo-text .disclaimer .text {
+  width: 90%;
+  margin: 0 auto;
   color: #25564b;
 }
 
-main section.photo-text .disclaimer.cherry .text h2 {
+main section.photo-text .disclaimer .text h2 {
+  font-size: 1.8rem;
   text-align: center;
   font-family: "Fraunces", sans-serif;
 }
 
-main section.photo-text .disclaimer.cherry .text p {
+main section.photo-text .disclaimer .text p {
+  margin-top: 10px;
   font-family: "Fraunces", sans-serif;
   text-align: center;
 }
@@ -164,5 +177,114 @@ main section.photo-text .disclaimer.orange {
   background: url("/images/mobile/image-photography.jpg");
   background-size: cover;
   height: 90vh;
+}
+
+main .reviews h2 {
+  font-family: "Fraunces", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 50px 0;
+  text-transform: uppercase;
+  color: #a7abae;
+  letter-spacing: 0.2rem;
+}
+
+main .reviews .review {
+  width: 90%;
+  margin: 0 auto 50px auto;
+}
+
+main .reviews .review p {
+  margin-top: 0.5rem;
+  color: #25564b;
+  font-family: "Fraunces", sans-serif;
+  text-align: center;
+}
+
+main .reviews .review .photo img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  max-width: 100%;
+  width: 30%;
+  height: 30%;
+}
+
+main .reviews .review .name {
+  margin-top: 1rem;
+  display: block;
+  text-align: center;
+  font-family: "Fraunces", sans-serif;
+}
+
+main .reviews .review .title {
+  margin-top: 1rem;
+  display: block;
+  text-align: center;
+  font-family: "Fraunces", sans-serif;
+  color: #a7abae;
+}
+
+main .photos--grid {
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+main .photos--grid .gridphoto img {
+  max-width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer {
+  height: 50vh;
+  background-color: #458c7e;
+}
+
+footer .footer--logo img {
+  display: block;
+  fill: #458c7e;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+footer .links {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+}
+
+footer .links .link {
+  font-family: "Fraunces", sans-serif;
+  color: #25564b;
+  font-size: 1.2rem;
+}
+
+footer .small--logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 5rem;
+  width: 60%;
+  margin: 5rem auto 0 auto;
+}
+
+footer .small--logos img {
+  max-width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
