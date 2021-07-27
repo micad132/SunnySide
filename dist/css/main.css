@@ -72,11 +72,18 @@ body {
   width: 20px;
 }
 
-main section.photo-text .photo-container {
+main .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+main .grid-container section.photo-text .photo-container {
   width: 100%;
 }
 
-main section.photo-text .photo-container .section--photo {
+main .grid-container section.photo-text .photo-container .section--photo {
   max-width: 100%;
   max-height: 100%;
   background-repeat: no-repeat;
@@ -84,7 +91,7 @@ main section.photo-text .photo-container .section--photo {
   background-position: center;
 }
 
-main section.photo-text .text-container {
+main .grid-container section.photo-text .text-container {
   height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -101,19 +108,19 @@ main section.photo-text .text-container {
           align-items: center;
 }
 
-main section.photo-text .text-container .title {
+main .grid-container section.photo-text .text-container .title {
   text-align: center;
   font-family: "Fraunces", sans-serif;
   color: #23303e;
 }
 
-main section.photo-text .text-container .description {
+main .grid-container section.photo-text .text-container .description {
   font-family: "Fraunces", sans-serif;
   text-align: center;
   color: #a7abae;
 }
 
-main section.photo-text .text-container .learn-more {
+main .grid-container section.photo-text .text-container .learn-more {
   text-decoration: none;
   color: #23303e;
   text-transform: uppercase;
@@ -121,7 +128,7 @@ main section.photo-text .text-container .learn-more {
   position: relative;
 }
 
-main section.photo-text .text-container .learn-more::after {
+main .grid-container section.photo-text .text-container .learn-more::after {
   position: absolute;
   top: 20px;
   display: block;
@@ -134,15 +141,15 @@ main section.photo-text .text-container .learn-more::after {
   opacity: 0;
 }
 
-main section.photo-text .text-container .learn-more:hover::after {
+main .grid-container section.photo-text .text-container .learn-more:hover::after {
   opacity: 1;
 }
 
-main section.photo-text .disclaimer {
+main .grid-container section.photo-text .disclaimer {
   position: relative;
 }
 
-main section.photo-text .disclaimer.cherry {
+main .grid-container section.photo-text .disclaimer.cherry {
   background: url("/images/mobile/image-graphic-design.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -150,36 +157,36 @@ main section.photo-text .disclaimer.cherry {
   height: 90vh;
 }
 
-main section.photo-text .disclaimer .text-wrapper {
+main .grid-container section.photo-text .disclaimer .text-wrapper {
   position: absolute;
   bottom: 10%;
 }
 
-main section.photo-text .disclaimer .text {
+main .grid-container section.photo-text .disclaimer .text {
   width: 90%;
   margin: 0 auto;
   color: #25564b;
 }
 
-main section.photo-text .disclaimer .text h2 {
+main .grid-container section.photo-text .disclaimer .text h2 {
   font-size: 1.8rem;
   text-align: center;
   font-family: "Fraunces", sans-serif;
 }
 
-main section.photo-text .disclaimer .text p {
+main .grid-container section.photo-text .disclaimer .text p {
   margin-top: 10px;
   font-family: "Fraunces", sans-serif;
   text-align: center;
 }
 
-main section.photo-text .disclaimer.orange {
+main .grid-container section.photo-text .disclaimer.orange {
   background: url("/images/mobile/image-photography.jpg");
   background-size: cover;
   height: 90vh;
 }
 
-main .reviews h2 {
+.reviews h2 {
   font-family: "Fraunces", sans-serif;
   font-size: 1.5rem;
   text-align: center;
@@ -189,19 +196,19 @@ main .reviews h2 {
   letter-spacing: 0.2rem;
 }
 
-main .reviews .review {
+.reviews .review {
   width: 90%;
   margin: 0 auto 50px auto;
 }
 
-main .reviews .review p {
+.reviews .review p {
   margin-top: 0.5rem;
   color: #25564b;
   font-family: "Fraunces", sans-serif;
   text-align: center;
 }
 
-main .reviews .review .photo img {
+.reviews .review .photo img {
   display: block;
   margin: 0 auto;
   border-radius: 50%;
@@ -210,14 +217,14 @@ main .reviews .review .photo img {
   height: 30%;
 }
 
-main .reviews .review .name {
+.reviews .review .name {
   margin-top: 1rem;
   display: block;
   text-align: center;
   font-family: "Fraunces", sans-serif;
 }
 
-main .reviews .review .title {
+.reviews .review .title {
   margin-top: 1rem;
   display: block;
   text-align: center;
@@ -225,7 +232,7 @@ main .reviews .review .title {
   color: #a7abae;
 }
 
-main .photos--grid {
+.photos--grid {
   width: 100vw;
   display: -ms-grid;
   display: grid;
@@ -235,7 +242,7 @@ main .photos--grid {
       grid-template-rows: 1fr 1fr;
 }
 
-main .photos--grid .gridphoto img {
+.photos--grid .gridphoto img {
   max-width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
