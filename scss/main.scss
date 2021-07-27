@@ -88,6 +88,11 @@ body {
 }
 
 main {
+     .grid-container{
+
+     
+        display: grid;
+        grid-template-columns: 1fr;
   section.photo-text {
     .photo-container {
       width: 100%;
@@ -181,6 +186,8 @@ main {
       }
     }
   }
+  }
+}
 
   .reviews {
     h2 {
