@@ -21,6 +21,12 @@ $font-secondary: "Fraunces", sans-serif;
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+  background-position: center;
+}
+
 body {
   width: 100%;
   font-family: "Barlow", sans-serif;
@@ -104,11 +110,11 @@ main {
         }
       }
       .text-container {
-        height: 300px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+
         .title {
           text-align: center;
           font-family: $font-secondary;
@@ -188,6 +194,7 @@ main {
 }
 
 .reviews {
+  // margin-top: 70rem;
   h2 {
     font-family: $font-secondary;
     font-size: 1.5rem;
@@ -197,7 +204,13 @@ main {
     color: $color-neutral-grayishblue;
     letter-spacing: 0.2rem;
   }
+  .reviews-container {
+    border: 2px solid pink;
+    display: flex;
+    flex-direction: column;
+  }
   .review {
+    border: 2px solid red;
     width: 90%;
     margin: 0 auto 50px auto;
 
@@ -234,6 +247,7 @@ main {
   }
 }
 .photos--grid {
+  margin-top: 20rem;
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr 1fr;

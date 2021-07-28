@@ -1,2 +1,69 @@
-@media (max-width: 750px) {
+@media (min-width: 780px) {
+  main {
+    .grid-container {
+      width: 100vw;
+
+      .photo-text {
+        display: grid;
+        height: 100vh;
+        max-height: 100vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+      }
+    }
+    .reviews {
+      display: block;
+      margin-top: 40rem;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  main {
+    .grid-container {
+      .photo-text {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        .text-container.numberone {
+          grid-column: 1 / 2;
+          grid-row: 1 / 2;
+        }
+        .photo-container.numbedwo {
+          grid-column: 2 / 3;
+          grid-row: 1 / 2;
+        }
+      }
+    }
+  }
+
+  .reviews {
+    padding-top: 20rem;
+    width: 100vw;
+    // height: 50vh;
+    .reviews-container {
+      border: 2px solid aqua;
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      padding: 5rem 0;
+    }
+  }
+  .photos--grid {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .links {
+    width: 30%;
+    margin: 0 auto;
+  }
+  .small--logos {
+    display: flex;
+    justify-content: center;
+    width: 20% !important;
+    margin: 0 auto;
+  }
 }

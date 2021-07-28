@@ -1,1 +1,87 @@
-/* No CSS *//*# sourceMappingURL=desktop.css.map */
+@media (min-width: 780px) {
+  main .grid-container {
+    width: 100vw;
+  }
+  main .grid-container .photo-text {
+    display: -ms-grid;
+    display: grid;
+    height: 100vh;
+    max-height: 100vh;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+  main .reviews {
+    display: block;
+    margin-top: 40rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  main .grid-container .photo-text {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
+  main .grid-container .photo-text .text-container.numberone {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+  main .grid-container .photo-text .photo-container.numbedwo {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+  .reviews {
+    padding-top: 20rem;
+    width: 100vw;
+  }
+  .reviews .reviews-container {
+    border: 2px solid aqua;
+    width: 90%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 5rem 0;
+  }
+  .photos--grid {
+    margin-top: 5rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .links {
+    width: 30%;
+    margin: 0 auto;
+  }
+  .small--logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 20% !important;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=desktop.css.map */
